@@ -60,7 +60,7 @@ _ST删除_: 找到 <code>X:\Program Files\Sublime Text 2(3)</code>清空该目�
 
 > 注：楼主删除重装后出现一大坑：无论如何设置语法不能高亮，且实时刷新无效果
 
-#### 附件：ST2 & ST3 百度网盘<img align="absmiddle" alt="gift" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/gift.png" title="gift" width="20px">：
+#### 附件：ST2 & ST3 百度网盘 <img align="absmiddle" alt="gift" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/gift.png" title="gift" width="20px">：
 
 ST2 __2.0.2__  X64 版本 [猛击](http://pan.baidu.com/s/1eQ5tad8)
 
