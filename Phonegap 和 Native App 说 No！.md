@@ -1,7 +1,7 @@
 Phonegap 环境配置
 ========
 
-目前要开发 Web App 还是有比较多的选择的 如 Phonegap、Hbuilder，接下来以 **Web前端开发工程师** 的角度来一个 Phonegap 的<code> First Blood </code>
+目前要开发 Web App 还是有比较多的选择的 如 Phonegap、MUI、AppCan，接下来以 **Web前端开发工程师** 的角度来一个 Phonegap 的<code> First Blood </code>
 
 ### 一、开发环境：
 
@@ -38,8 +38,12 @@ b：打开 Android Studio 安装目录的 <code>F:\Android SDK\adt-win-x64-135\b
 
 在 <code> F:\Android SDK\local-sdk</code> 下有个 <code>SDK Manager.exe</code> 另外 <code>AVD Manager.exe</code> 是模拟器，打开 Manager 是一个组件包管理器；如果有安装失败的请重试。
 
+> 设置 Android SDK Manager 代理：
+> 首先打开 组件管理器 依次展开： <code>Tools > options </code> 在弹出的 Settings 窗口中选择 Http Proxy Server 填入： <code>mirrors.neusoft.edu.cn</code> Port 中填入 <code>80</code> 并选中 Others 选项中的 第一项；最后 单击 Close 关闭，并返回。
+
 ![Manager 组件包管理器][24]
 
+> 注：上图中的 组件是远远不够的，请根据实际开发扩展
 
 ##### ![jdk安装 7u71][13]
 
@@ -149,15 +153,21 @@ b、Star a new Android Studio project
     $ cordova -v
         #4.1.2
         #创建项目 
-    $ cordova create firstblood highsea90.com first
+    $ cordova create firstblood com.highsea90.first first
         #进入项目
     $ cd firstblood/
-        #添加android支持
+        #添加android支持 **注意，tip**
     $ cordova platform add android
         #生成
     $cordova build
         #运行(需要添加模拟器)
     $cordova emulate android
+
+> tip: 如果 android 环境没有搭好这里可能提示 比如： <code>Error: Please install Android target "android-19".</code> 说明在 Android SDK Manager 里没有安装好 Android 4.4.2；Why？
+
+如下图：依次类推，报 target 什么错就缺什么组件
+
+![Android target android-21][37]
 
 ##### 2.2、 任性的使用 phonegap ![phonegap][36]
 依旧要使用 phonegap 也可以，但是国外镜像下载失败概率较大，这里以 [淘宝镜像为例][35]
@@ -245,3 +255,4 @@ b、Star a new Android Studio project
 [34]: http://www.phonegapcn.com/start/zh/1.3/#android "phonegap cn android"
 [35]: http://npm.taobao.org/                        "TAONPM 淘宝镜像"
 [36]: http://images.cnitblog.com/blog/531703/201501/051613094371678.png "phonegap logo"
+[37]: http://images.cnitblog.com/blog/531703/201501/061321543752846.jpg "Android target android-21 (3-21)"
