@@ -89,7 +89,7 @@ ADT 插件必须通过 Eclipse Install New Software 向导来进行安装。按�
 
 9. 设置Android SDK 路径以及配置
 
-> 注：在线安装网络出错的话，可以下载离线包：[猛击这里][21]；还是下载不了？[上百度云][22]
+> 注：在线安装网络出错的话，可以下载离线包：[猛击这里][21]；还是下载不了？[上百度云][38]
 
 接下来安装 离线包，和 在线安装相同的 1、2 步骤
 
@@ -204,18 +204,104 @@ b、Star a new Android Studio project
 > ![新建项目][33]
 
 
+### cordova 插件安装
+
+#### 查看已经插件
+
+进入项目 执行：
+
+    $ cordova plugin
+    No plugins added. Use `cordova plugin add <plugin>`.
+
+#### 安装相关插件
+
+* 基本设备资讯-设备API
+
+    <code>cordova plugin add org.apache.cordova.device</code>
+
+* 网络连接
+
+    <code>cordova plugin add org.apache.cordova.network-information</code>
+
+* 电池事件
+
+    <code>cordova plugin add org.apache.cordova.battery-status</code>
+
+* 加速度计算
+
+    <code>cordova plugin add org.apache.cordova.device-motion</code>
+
+* 指南针
+
+    <code>cordova plugin add org.apache.cordova.device-orientation</code>
+
+* 地理定位
+
+    <code>cordova plugin add org.apache.cordova.geolocation</code>
+
+* 相机
+
+    <code>cordova plugin add org.apache.cordova.camera</code>
+
+* 媒体
+
+    <code>cordova plugin add org.apache.cordova.media</code>
+
+* 捕获
+
+    <code>cordova plugin add org.apache.cordova.media-capture</code>
+
+* 访问设备
+
+    <code>cordova plugin add org.apache.cordova.file</code>
+
+* 网络文件传输
+
+    <code>cordova plugin add org.apache.cordova.file-transfer</code>
+
+* 对话方块通知
+
+    <code>cordova plugin add org.apache.cordova.dialogs</code>
+
+* 震动发出通知
+
+    <code>cordova plugin add org.apache.cordova.vibration</code>
+
+* 联络人
+
+    <code>cordova plugin add org.apache.cordova.contacts</code>
+
+* 全球化
+
+    <code>cordova plugin add org.apache.cordova.globalization</code>
+
+* 启动动画
+
+    <code>cordova plugin add org.apache.cordova.splashscreen</code>
+
+* 打开新的浏览器视窗-InAppBrowser
+
+    <code>cordova plugin add org.apache.cordova.inappbrowser</code>
+
+* 调试控制台
+
+    <code>cordova plugin add org.apache.cordova.console</code>
+
+
+
 ### 三、运行项目
 
 这个，上面已经提到了，记得添加模拟器就行，不会？那就没办法了……，待续吧
 
+
 完
---------
+----
 
 参考文章：
 
 使用 Eclipse PhoneGap 构建 Android 应用程序入门；[移步][20]
 环境搭建教程（最新版本1.3） phonegap cn android；[移步][34]
-
+Android开发所需的Android SDK、开发中用到的工具、Android开发教程、Android设计规范，免费的设计素材等 [移步][39]
 
 [1]: http://nodejs.org/download/                    "Nodejs 下载"
 [2]: http://developer.android.com/sdk/index.html    "Android SDK 下载"
@@ -256,3 +342,5 @@ b、Star a new Android Studio project
 [35]: http://npm.taobao.org/                        "TAONPM 淘宝镜像"
 [36]: http://images.cnitblog.com/blog/531703/201501/051613094371678.png "phonegap logo"
 [37]: http://images.cnitblog.com/blog/531703/201501/061321543752846.jpg "Android target android-21 (3-21)"
+[38]: http://pan.baidu.com/s/1dD8dk3J "ADT-23.0.4 百度云"
+[39]: https://github.com/highsea/AndroidDevTools "Android开发所需的Android SDK、开发中用到的工具、Android开发教程、Android设计规范，免费的设计素材等"

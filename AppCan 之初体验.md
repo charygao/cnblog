@@ -3,10 +3,11 @@ AppCan 之初体验
 
 ### 平台概述
 
-什么是AppCan [移步这里][1]，楼主的一句话：可以匹敌 [Phonegap][2] 、[Titanium][3] 、[Sencha Touch][4] 、[MUI][5] 的跨平台移动开发框架，可用于开发 Web App 的 **国产、免费、不开源** 框架。
+什么是AppCan [移步这里][1]，楼主的一句话：可以匹敌 [Phonegap][2] 、[Titanium][3] 、[Sencha Touch][4] 、[MUI][5] 、[ImagApp][18]、[Nitrous][19] 、[apicloud][20] 、[起步X5][21] 的跨平台移动开发框架，可用于开发 Web App 的 **国产、免费、不开源** 框架。
 但除 Appcan ，其他框架都是免费的而且开源（开源确实很重要……不过国产软件不开源似乎也能理解），[MUI][5]也是国产的，个人也是特别喜欢，因为这样至少可以少看一些鸟语的 API 文档了。这里有一篇 [AppCan VS PhoneGap - 对比两大移动开发平台][6]，虽各有利弊但 AppCan 似乎更胜一筹；
 
 > AppCan 生成的 APP 体积大似乎是最大的弊端了
+> AppCan 和周边平台的比较 [移步这里][17]
 
 有时间 楼主会整理一篇 AppCan VS MUI 的对比；不过 就凭 *打包无需native开发环境* 这一点，我想应该有很多 Web 工程师喜欢不得了，ADT 的配置 以及 SDK Manager 的组件下载（被qiang）是非常头疼…… 
 
@@ -71,5 +72,8 @@ AppCan 可以设置SVN，右击项目，选择 team > 共享 即可
 [14]: http://images.cnitblog.com/blog/531703/201501/061535102814887.jpg "启动界面"
 [15]: http://images.cnitblog.com/blog/531703/201501/061546299845367.jpg "模拟器效果"
 [16]: http://newdocx.appcan.cn/index.html 					"AppCan 文档中心"
-
-
+[17]: http://mobile.51cto.com/web-356406.htm 				"AppCan 和周边平台的比较"
+[18]: http://www.imagapp.com/ 								"ImagApp"
+[19]: http://nitrous.io/ 									"Nitrous.IO"
+[20]: http://www.apicloud.com/ 								"apicloud"
+[21]: http://www.justep.com/mobile.html 					"起步X5"
