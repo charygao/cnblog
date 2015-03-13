@@ -3,10 +3,7 @@ Sublime Text 插件之：MarkDown <img align="absmiddle" alt="octocat" height="2
 
 #### 安装 Package
 
-安装 包控制器（Package Control） 用于安装 ST 的各类插件；如同 **nodejs** 的 **npm** 一样；已经安装的同学请忽略之；打开ST后按 <kbd>ctrl+`</kbd> 找不到？那么点击查单 <code>View > Show Console </code>后出现控制台，请选择以下代码回车执行。注意查看提示哦，
-安装成功后最好重启（针对于2） ST ；查看菜单栏 <code>Preferences > Browse Packages > Markdown Preview </code> 已经出现，没看到？那就重复以上操作吧！
-
-> 猛击这里查看 [packagecontrol 官网](https://packagecontrol.io/ 'packagecontrol') 也可以搜索各类插件 
+安装 包控制器（Package Control） 用于安装 ST 的各类插件；如同 **nodejs** 的 **npm** 一样；已经安装的同学请忽略之；打开ST后按 <kbd>ctrl+`</kbd> 找不到？那么点击查单 <code>View > Show Console </code>后出现控制台，请选择以下代码回车执行。
 
 
 ###### For Sublime Text 3
@@ -23,7 +20,18 @@ Sublime Text 插件之：MarkDown <img align="absmiddle" alt="octocat" height="2
 
     import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')
 
+注意查看提示哦，
+安装成功后最好重启（针对于2） ST ；查看菜单栏 <code>Preferences > Browse Packages > Markdown Preview </code> 已经出现，没看到？那就重复以上操作吧！
+
+> 猛击这里查看 [packagecontrol 官网](https://packagecontrol.io/ 'packagecontrol') 也可以搜索各类插件 
+
+> 安装好 Package Control 后，如何调出安装控制包：在 Windows 平台按快捷键 <kbd>Ctrl+Shift+p</kbd> MAC OX平台则是 <kbd>Command+Shift+p</kbd>
+
 安装成功后 Markdown Preview 默认没有浏览器预览快捷键，可以自行设置；<code>Preferences -> Key Bindings User </code> 打开后在 中括号中添加以下代码：
+
++ MAC OX 怎么找到 个人设置 如下：
+
+![mac ox 个人设置][2]
 
 #### markdown 的快捷键
 
@@ -60,10 +68,17 @@ _ST删除_: 找到 <code>X:\Program Files\Sublime Text 2(3)</code>清空该目�
 
 > 注：楼主删除重装后出现一大坑：无论如何设置语法不能高亮，且实时刷新无效果
 
-#### 附件：ST2 & ST3 百度网盘 <img align="absmiddle" alt="gift" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/gift.png" title="gift" width="20px">：
+#### 附件：ST2 & ST3 百度网盘<img align="absmiddle" alt="gift" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/gift.png" title="gift" width="20px">：
 
 ST2 __2.0.2__  X64 版本 [猛击](http://pan.baidu.com/s/1eQ5tad8)
 
 ST3 __3065__  X64 版本 [猛击](http://pan.baidu.com/s/1pmhmY)
 
-   [1]: https://assets-cdn.github.com/images/icons/emoji/heart.png  "heart"
+   
+
+[1]: https://assets-cdn.github.com/images/icons/emoji/heart.png  "heart"
+[2]: http://images.cnitblog.com/blog2015/531703/201503/132052532615101.png "mac ox"
+
+
+
+
