@@ -106,6 +106,13 @@ Mongodb For Windows
     WriteResult({ "nInserted" : 1 })
     >_
 
+> 注 此处如提示
+
+     chunk 4114 failed with errno:1455 页面文件太小，无法完成操作。
+    ……
+
+则是服务器内存不够用了，建议增加虚拟内存或者物理内存
+
 > 注 mongodb 中把关系数据库的"表"称作"集合" ……
 
 以上创建了 名为”highsea“的表，（如果已存在 “highsea”的表 mongodb 会合并）并且插入了俩个字段 "nickname" 和 "job" ，主键是 “_id”，继续：
